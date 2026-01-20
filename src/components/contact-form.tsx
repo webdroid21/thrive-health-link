@@ -15,22 +15,43 @@ export function ContactForm({ type }: ContactFormProps) {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState("");
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setError("");
 
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    type,
+                }),
+            });
 
-        setSubmitted(true);
-        setIsSubmitting(false);
+            const data = await response.json();
 
-        // Reset form after 3 seconds
-        setTimeout(() => {
-            setSubmitted(false);
+            if (!response.ok) {
+                throw new Error(data.error || "Failed to send message");
+            }
+
+            setSubmitted(true);
             setFormData({ name: "", email: "", message: "" });
-        }, 3000);
+
+            // Reset success state after 5 seconds
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 5000);
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to send message. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (submitted) {
@@ -127,6 +148,12 @@ export function ContactForm({ type }: ContactFormProps) {
                     placeholder="Tell us how you'd like to help..."
                 />
             </div>
+
+            {error && (
+                <div className="bg-red-50 dark:bg-red-950/20 border-2 border-red-200 dark:border-red-900 text-red-700 dark:text-red-400 px-4 py-3 rounded-lg">
+                    <p className="text-sm font-medium">{error}</p>
+                </div>
+            )}
 
             <Button
                 type="submit"

@@ -12,7 +12,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { HandHeart, Users, Building, Mail, Phone, MapPin } from "lucide-react";
+import { HandHeart, Users, Building, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { ContactForm } from "./contact-form";
 
 const ways = [
@@ -165,6 +165,19 @@ export function ContactSection() {
 
                                     <div className="flex items-start gap-4">
                                         <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                                        <div>
+                                            <h4 className="font-semibold mb-1">Email</h4>
+                                            <a
+                                                href="mailto:thrivehealthlink@gmail.com"
+                                                className="text-muted-foreground hover:text-primary transition-colors"
+                                            >
+                                                thrivehealthlink@gmail.com
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start gap-4">
+                                        <Linkedin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                                         <div>
                                             <h4 className="font-semibold mb-1">Connect Online</h4>
                                             <a

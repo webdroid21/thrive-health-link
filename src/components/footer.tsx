@@ -92,6 +92,14 @@ export function Footer() {
                             </li>
                             <li>
                                 <a
+                                    href="mailto:thrivehealthlink@gmail.com"
+                                    className="hover:text-secondary transition-colors"
+                                >
+                                    thrivehealthlink@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a
                                     href="https://www.linkedin.com/company/109986222/"
                                     target="_blank"
                                     rel="noopener noreferrer"
