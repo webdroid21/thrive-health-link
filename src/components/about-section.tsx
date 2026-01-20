@@ -10,7 +10,7 @@ const features = [
     {
         icon: Heart,
         title: "Community First",
-        description: "Partnering with families and local leaders to build lasting health solutions.",
+        description: "Partnering with care givers and community health workers to build lasting health solutions.",
     },
     {
         icon: Users,
