@@ -85,7 +85,7 @@ export function HeroSection() {
                             style={{ animationDelay: "0.3s" }}
                         >
                             <Image
-                                src="/thrive-images/image1.jpeg"
+                                src="/thrive-images/image3.jpeg"
                                 alt="Community health worker"
                                 fill
                                 className="object-cover transform group-hover:scale-110 transition-transform duration-700"
