@@ -79,6 +79,20 @@ export function HeroSection() {
                             </Button>
                         </div>
 
+                        {/* Mobile: Single Featured Image (appears before stats on mobile) */}
+                        <div
+                            className={`lg:hidden relative h-[400px] rounded-2xl overflow-hidden shadow-2xl group ${isVisible ? "animate-in slide-in-from-bottom duration-1000" : "opacity-0"}`}
+                            style={{ animationDelay: "0.3s" }}
+                        >
+                            <Image
+                                src="/thrive-images/image1.jpeg"
+                                alt="Community health worker"
+                                fill
+                                className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+
                         {/* Stats Row */}
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8">
                             {stats.map((stat, index) => {
@@ -104,24 +118,12 @@ export function HeroSection() {
                         </div>
                     </div>
 
-                    {/* Image Section - Single image on mobile, grid on desktop */}
+                    {/* Desktop: Bento Grid */}
                     <div
-                        className={`${isVisible ? "animate-in slide-in-from-right duration-1000" : "opacity-0"} order-first lg:order-last`}
+                        className={`hidden lg:block ${isVisible ? "animate-in slide-in-from-right duration-1000" : "opacity-0"}`}
                         style={{ animationDelay: "0.2s" }}
                     >
-                        {/* Mobile: Single Featured Image */}
-                        <div className="lg:hidden relative h-[400px] rounded-2xl overflow-hidden shadow-2xl group mb-8">
-                            <Image
-                                src="/thrive-images/image1.jpeg"
-                                alt="Community health worker"
-                                fill
-                                className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-
-                        {/* Desktop: Bento Grid */}
-                        <div className="hidden lg:grid grid-cols-12 grid-rows-12 gap-4 h-[600px]">
+                        <div className="grid grid-cols-12 grid-rows-12 gap-4 h-[600px]">
                             {/* Large Image - Top Left */}
                             <div className="col-span-7 row-span-7 relative group overflow-hidden rounded-2xl shadow-2xl">
                                 <Image
