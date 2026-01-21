@@ -8,49 +8,64 @@ import { Button } from "@/components/ui/button";
 
 const galleryImages = [
     {
-        src: "/thrive-images/image3.jpeg",
+        src: "/thrive/Community Health worker.jpeg",
         title: "Community Health Worker",
         description: "Dedicated health workers serving vulnerable communities",
     },
     {
-        src: "/thrive-images/image2.jpeg",
-        title: "Healthcare Outreach",
-        description: "Reaching families in urban slums and rural areas",
+        src: "/thrive/Educating caregivers who prioritise work over health seeking.jpeg",
+        title: "Educating Caregivers",
+        description: "Engaging caregivers who prioritize work over health-seeking behavior",
     },
     {
-        src: "/thrive-images/image1.jpeg",
-        title: "Mother and Child",
-        description: "Ensuring every child receives life-saving vaccines",
-    },
-    {
-        src: "/thrive-images/image4.jpeg",
-        title: "Community Engagement",
-        description: "Building trust through grassroots partnerships",
-    },
-    {
-        src: "/thrive-images/image5.jpeg",
+        src: "/thrive/Field Operations.jpeg",
         title: "Field Operations",
-        description: "VHTs conducting door-to-door health visits",
+        description: "VHTs conducting door-to-door health visits across communities",
     },
     {
-        src: "/thrive-images/image6.jpeg",
-        title: "Healthcare Technology",
-        description: "Vaxclue digital platform development",
-    },
-    {
-        src: "/thrive-images/image7.jpeg",
-        title: "Community Impact",
-        description: "Transforming lives one vaccine at a time",
-    },
-    {
-        src: "/thrive-images/image8.jpeg",
+        src: "/thrive/Health education.jpeg",
         title: "Health Education",
-        description: "Empowering caregivers with knowledge",
+        description: "Empowering caregivers with essential health knowledge",
     },
     {
-        src: "/thrive-images/image10.jpeg",
+        src: "/thrive/Healthcare Outreach.jpeg",
+        title: "Healthcare Outreach",
+        description: "Reaching families in urban slums and underserved rural areas",
+    },
+    {
+        src: "/thrive/Incentive Distribution.jpg",
+        title: "Incentive Distribution",
+        description: "Rewarding community health workers for their dedicated service",
+    },
+    {
+        src: "/thrive/Information verification and documentation.jpeg",
+        title: "Information Verification & Documentation",
+        description: "Ensuring accurate data collection and record-keeping in the field",
+    },
+    {
+        src: "/thrive/Last mile client identification.jpeg",
+        title: "Last Mile Client Identification",
+        description: "Locating and registering hard-to-reach children in remote communities",
+    },
+    {
+        src: "/thrive/One-on-one (tailored) sensitisation.jpeg",
+        title: "One-on-One Sensitization",
+        description: "Providing personalized health education tailored to each caregiver's needs",
+    },
+    {
+        src: "/thrive/Previously zero-dose child receiving her vaccines.jpeg",
+        title: "Zero-Dose Child Vaccination",
+        description: "A previously unvaccinated child receiving her first life-saving vaccines",
+    },
+    {
+        src: "/thrive/Team Collaboration.jpg",
         title: "Team Collaboration",
-        description: "Youth-led initiative making a difference",
+        description: "Youth-led initiative driving community health transformation",
+    },
+    {
+        src: "/thrive/Vaxclue SMS Reminders.jpeg",
+        title: "Vaxclue SMS Reminders",
+        description: "Digital vaccination reminders keeping caregivers informed and engaged",
     },
 ];
 
