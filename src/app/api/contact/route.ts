@@ -16,34 +16,12 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Check if Resend is configured
-        if (!process.env.RESEND_API_KEY) {
-            console.error("RESEND_API_KEY is not configured");
-            console.log("Contact form submission (not sent):", {
-                to: CONTACT_EMAIL,
-                from: email,
-                name,
-                type,
-                message,
-                timestamp: new Date().toISOString(),
-            });
-
-            return NextResponse.json(
-                {
-                    success: true,
-                    message: "Your message has been received. We'll get back to you soon!",
-                    warning: "Email service not configured - message logged only"
-                },
-                { status: 200 }
-            );
-        }
-
         // Initialize Resend client
-        const resend = new Resend(process.env.RESEND_API_KEY);
+        const resend = new Resend(process.env.RESEND_API_KEY || "re_ehsuiHD2_EcH7jNBVYtwGiNWb1XVsoANV");
 
         // Send email using Resend
         const { data, error } = await resend.emails.send({
-            from: "Thrive Health Link <onboarding@resend.dev>", // Use your verified domain in production
+            from: "Thrive Health Link <info@thrivehealthlink.org>", // TODO: Change to info@thrivehealthlink.org after domain verification
             to: CONTACT_EMAIL,
             replyTo: email,
             subject: `New ${type} from ${name}`,
