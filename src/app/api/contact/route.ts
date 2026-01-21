@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const CONTACT_EMAIL = "info@thrivehealthlink.org";
 
 export async function POST(req: NextRequest) {
@@ -38,6 +37,9 @@ export async function POST(req: NextRequest) {
                 { status: 200 }
             );
         }
+
+        // Initialize Resend client
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         // Send email using Resend
         const { data, error } = await resend.emails.send({
