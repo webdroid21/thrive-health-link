@@ -27,12 +27,12 @@ export function HeroSection() {
             className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-20"
         >
             {/* Animated Gradient Background */}
-            <div className="absolute inset-0 bg-primary/10" />
+            <div className="absolute inset-0 bg-secondary/10" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(0,115,230,0.15),transparent_50%)]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(22,163,74,0.15),transparent_50%)]" />
 
             {/* Floating Orbs */}
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
