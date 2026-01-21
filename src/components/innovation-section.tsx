@@ -31,7 +31,7 @@ export function InnovationSection() {
         <section
             id="innovation"
             ref={sectionRef}
-            className="py-24 bg-primary/5"
+            className="py-24 bg-secondary/5"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div

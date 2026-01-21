@@ -117,11 +117,11 @@ export function AboutSection() {
                                 key={feature.title}
                                 className="group relative overflow-hidden border-0 bg-gradient-to-br from-background to-muted/30 shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 duration-300"
                             >
-                                <div className="absolute top-0 left-0 w-full h-0.5 bg-primary" />
+                                <div className="absolute top-0 left-0 w-full h-0.5 bg-secondary" />
                                 <CardHeader className="pb-3">
                                     <div className="relative mb-4">
-                                        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center relative z-10 shadow-md group-hover:scale-110 transition-transform duration-300">
-                                            <Icon className="w-8 h-8 text-primary" />
+                                        <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center relative z-10 shadow-md group-hover:scale-110 transition-transform duration-300">
+                                            <Icon className="w-8 h-8 text-secondary" />
                                         </div>
                                         <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
                                     </div>
