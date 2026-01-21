@@ -56,7 +56,7 @@ export function ProblemSection() {
                         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed relative z-10">
                             Thrive Health Link works with the{" "}
                             <span className="text-foreground font-semibold">
-                                poorest caregivers in Kampala's slums and rural communities
+                                poorest caregivers in Uganda's slums and rural communities
                             </span>
                             … families who miss vaccines{" "}
                             <span className="text-foreground font-semibold">not because they don't care</span>,

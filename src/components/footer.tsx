@@ -122,7 +122,7 @@ export function Footer() {
                             Ensuring universal access to care for every child
                         </p>
                         <p className="text-gray-500 text-xs mt-1">
-                            Thrive Health Link operates under{" "}
+                            Thrive Health Link operates under fiscal sponsorship of{" "}
                             <a
                                 href="https://www.fasiuganda.org/"
                                 target="_blank"

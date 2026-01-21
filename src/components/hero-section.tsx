@@ -85,7 +85,7 @@ export function HeroSection() {
                             style={{ animationDelay: "0.3s" }}
                         >
                             <Image
-                                src="/thrive-images/image3.jpeg"
+                                src="/thrive-images/image4.jpeg"
                                 alt="Community health worker"
                                 fill
                                 className="object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -118,56 +118,18 @@ export function HeroSection() {
                         </div>
                     </div>
 
-                    {/* Desktop: Bento Grid */}
+                    {/* Featured Image (all screen sizes) */}
                     <div
-                        className={`hidden lg:block ${isVisible ? "animate-in slide-in-from-right duration-1000" : "opacity-0"}`}
+                        className={`hidden lg:block relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl group ${isVisible ? "animate-in slide-in-from-right duration-1000" : "opacity-0"}`}
                         style={{ animationDelay: "0.2s" }}
                     >
-                        <div className="grid grid-cols-12 grid-rows-12 gap-4 h-[600px]">
-                            {/* Large Image - Top Left */}
-                            <div className="col-span-7 row-span-7 relative group overflow-hidden rounded-2xl shadow-2xl">
-                                <Image
-                                    src="/thrive-images/image1.jpeg"
-                                    alt="Community health worker"
-                                    fill
-                                    className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-
-                            {/* Medium Image - Top Right */}
-                            <div className="col-span-5 row-span-5 relative group overflow-hidden rounded-2xl shadow-2xl">
-                                <Image
-                                    src="/thrive-images/image2.jpeg"
-                                    alt="Healthcare outreach"
-                                    fill
-                                    className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-
-                            {/* Small Image - Bottom Left */}
-                            <div className="col-span-5 row-span-5 relative group overflow-hidden rounded-2xl shadow-2xl">
-                                <Image
-                                    src="/thrive-images/image3.jpeg"
-                                    alt="Mother and child"
-                                    fill
-                                    className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-
-                            {/* Medium-Large Image - Bottom Right */}
-                            <div className="col-span-7 row-span-7 relative group overflow-hidden rounded-2xl shadow-2xl">
-                                <Image
-                                    src="/thrive-images/image4.jpeg"
-                                    alt="Community engagement"
-                                    fill
-                                    className="object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-                        </div>
+                        <Image
+                            src="/thrive-images/image4.jpeg"
+                            alt="Community health worker"
+                            fill
+                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                 </div>
             </div>
