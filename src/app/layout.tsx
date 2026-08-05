@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     "health equity",
   ],
   authors: [{ name: "Thrive Health Link" }],
+  icons: {
+    icon: "/favicon/favicon.ico",
+    shortcut: "/favicon/favicon.ico",
+    apple: "/favicon/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Thrive Health Link - Every Child Deserves Health",
     description: "Breaking socioeconomic barriers to accessing child health services for marginalized communities in Uganda.",

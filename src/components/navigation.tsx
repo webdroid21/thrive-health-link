@@ -40,13 +40,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-24">
           {/* Logo with Animation */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-300" />
+            <div className="relative p-2 rounded-full bg-white/30 backdrop-blur-xl ring-2 ring-white/40 shadow-[0_0_25px_rgba(255,255,255,0.4)] overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
               <img
                 src="/thrive-v2/thrive-horizontal-lockup_3.png"
                 alt="Thrive Health Link (THL)"
-
-                className="w-auto h-[32px] rounded-full ring-4 ring-white/50 shadow-xl relative transform group-hover:scale-110 transition-transform duration-300"
+                className="w-auto h-[32px]"
               />
             </div>
           </Link>

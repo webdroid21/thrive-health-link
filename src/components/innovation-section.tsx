@@ -88,7 +88,7 @@ export function InnovationSection() {
                         className={`${isVisible ? "fade-in" : "opacity-0"}`}
                         style={{ animationDelay: "0.3s" }}
                     >
-                        <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <div className="relative w-[60%] aspect-[486/1080] rounded-xl overflow-hidden shadow-2xl mx-auto">
                             <Image
                                 src="/thrive-v2/shot2.jpeg"
                                 alt="VaxClue child enrolment screen"
