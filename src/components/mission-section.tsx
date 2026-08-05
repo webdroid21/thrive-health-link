@@ -104,7 +104,7 @@ export function MissionSection() {
                     >
                         <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
                         <CardHeader>
-                            <CardTitle className="text-2xl text-secondary-foreground flex items-center gap-3">
+                            <CardTitle className="text-2xl text-foreground flex items-center gap-3">
                                 <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
                                     <svg className="w-6 h-6 text-secondary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />

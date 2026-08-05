@@ -43,8 +43,9 @@ export function Navigation() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-300" />
               <img
-                src="/logo.jpeg"
-                alt="Thrive Health Link Logo"
+                src="/thrive-v2/thrive-horizontal-lockup_3.png"
+                alt="Thrive Health Link (THL)"
+
                 className="w-auto h-[32px] rounded-full ring-4 ring-white/50 shadow-xl relative transform group-hover:scale-110 transition-transform duration-300"
               />
             </div>

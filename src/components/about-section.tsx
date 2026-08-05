@@ -85,7 +85,7 @@ export function AboutSection() {
                     >
                         <h3 className="text-3xl font-bold text-foreground">Who We Are</h3>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            Thrive Health Link is a youth-led community health system
+                            Thrive Health Link (THL) is a youth-led community health system
                             strengthening initiative which aims to optimize child health among
                             underserved communities in Uganda's urban slums and impoverished
                             rural communities.

@@ -10,11 +10,18 @@ const supporters = [
         name: "D-Prize",
         url: "https://d-prize.org/",
         description: "Supporting poverty alleviation through distributed entrepreneurship",
+        image: "/partners/d-prize.jpeg",
     },
     {
         name: "FASI Uganda",
         url: "https://www.fasiuganda.org/",
         description: "Foundation for Advanced Studies & Innovation",
+        image: "/partners/fasi.jpeg",
+    },
+    {
+        name: "Spoon Foundation",
+        url: "https://www.spoonfoundation.org/",
+        description: "Nourishing vulnerable children through evidence-based nutrition programs",
     },
 ];
 
@@ -56,7 +63,7 @@ export function SupportersSection() {
                 </div>
 
                 <div
-                    className={`grid md:grid-cols-2 gap-12 max-w-5xl mx-auto ${isVisible ? "fade-in" : "opacity-0"}`}
+                    className={`grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto ${isVisible ? "fade-in" : "opacity-0"}`}
                     style={{ animationDelay: "0.2s" }}
                 >
                     {supporters.map((supporter, index) => (
@@ -72,12 +79,20 @@ export function SupportersSection() {
                                 <CardContent className="p-10">
                                     {/* Logo Container */}
                                     <div className="relative h-32 mb-6 flex items-center justify-center bg-white rounded-lg p-6 shadow-sm group-hover:shadow-md transition-shadow">
-                                        <Image
-                                            src={`/partners/${supporter.name === "D-Prize" ? "d-prize" : "fasi"}.jpeg`}
-                                            alt={`${supporter.name} logo`}
-                                            fill
-                                            className="object-contain p-4"
-                                        />
+                                        {supporter.image ? (
+                                            <Image
+                                                src={supporter.image}
+                                                alt={`${supporter.name} logo`}
+                                                fill
+                                                className="object-contain p-4"
+                                            />
+                                        ) : (
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <span className="text-3xl font-bold text-muted-foreground">
+                                                    {supporter.name.split(" ").map((word) => word[0]).join("")}
+                                                </span>
+                                            </div>
+                                        )}
                                     </div>
 
                                     {/* Partner Info */}

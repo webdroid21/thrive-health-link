@@ -39,10 +39,10 @@ export function InnovationSection() {
                 >
                     <Badge className="mb-4">Latest Innovation</Badge>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        Introducing Vaxclue
+                        VaxClue is Live
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        Our last-mile digital platform revolutionizing community health
+                        Our last-mile digital platform is already transforming community health
                         outreach
                     </p>
                 </div>
@@ -53,18 +53,18 @@ export function InnovationSection() {
                         style={{ animationDelay: "0.2s" }}
                     >
                         <h3 className="text-3xl font-bold text-foreground">
-                            What We're Working On
+                            What VaxClue Does
                         </h3>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            We are developing a last-mile digital platform to ease VHT
-                            follow-up efforts, serve a detailed up-to-date electronic job aide
-                            and automated follow-up reminder system benefitting even those
+                            VaxClue is a live last-mile digital platform that eases VHT
+                            follow-up efforts, provides a detailed up-to-date electronic job aide
+                            and automated follow-up reminders — benefitting even those
                             without smartphones.
                         </p>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            Vaxclue is our way of scaling what already works on the ground:
-                            reminding caregivers through basic SMS and addressing
-                            misinformation through trusted community health workers.
+                            It is already scaling what works on the ground: reminding caregivers
+                            through basic SMS and addressing misinformation through trusted
+                            community health workers.
                         </p>
 
                         <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-lg">
@@ -73,7 +73,7 @@ export function InnovationSection() {
                             </p>
                             <p className="text-muted-foreground">
                                 By leveraging technology while maintaining the human touch,
-                                Vaxclue will enable us to reach more families, track outcomes
+                                VaxClue enables us to reach more families, track outcomes
                                 better, and ensure no child slips through the cracks.
                             </p>
                             <p className="text-muted-foreground mt-3">
@@ -90,8 +90,8 @@ export function InnovationSection() {
                     >
                         <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/thrive-images/image10.jpeg"
-                                alt="Healthcare technology"
+                                src="/thrive-v2/shot2.jpeg"
+                                alt="VaxClue child enrolment screen"
                                 fill
                                 className="object-cover"
                             />

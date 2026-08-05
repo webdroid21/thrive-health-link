@@ -7,8 +7,8 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, Users, Heart, Award, TrendingUp } from "lucide-react";
 
 const stats = [
-    { icon: Users, value: "2,000+", label: "Children connected to care since 2024", color: "text-primary" },
-    { icon: Heart, value: "98%", label: "Follow-up success on immunization referrals", color: "text-secondary" },
+    { icon: Users, value: "5,000+", label: "linked to care", color: "text-primary" },
+    { icon: Heart, value: "98%", label: "follow-up success on immunization referrals", color: "text-secondary" },
     { icon: Award, value: "50+", label: "Communities reached", color: "text-accent" },
     { icon: TrendingUp, value: "85%", label: "Impact Growth", color: "text-primary" },
 ];
@@ -55,7 +55,7 @@ export function HeroSection() {
                                 Linking Vulnerable Children
                             </span>
                             <span className="block text-secondary">
-                                To Life-Saving Immunization
+                                To Life-Saving Immunization, and Nutrition Services
                             </span>
                         </h1>
 

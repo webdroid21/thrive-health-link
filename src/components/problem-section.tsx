@@ -54,7 +54,7 @@ export function ProblemSection() {
                         </div>
 
                         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed relative z-10">
-                            Thrive Health Link works with the{" "}
+                            Thrive Health Link (THL) works with the{" "}
                             <span className="text-foreground font-semibold">
                                 poorest caregivers in Uganda's slums and rural communities
                             </span>

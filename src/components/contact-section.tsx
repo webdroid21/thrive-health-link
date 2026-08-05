@@ -72,7 +72,7 @@ export function ContactSection() {
                         Join Us in Making a Difference
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        At Thrive Health Link, we believe in the power of collective action.
+                        At Thrive Health Link (THL), we believe in the power of collective action.
                         There's a role for you in our mission.
                     </p>
                 </div>
@@ -145,7 +145,9 @@ export function ContactSection() {
                                         <div>
                                             <h4 className="font-semibold mb-1">Head Office</h4>
                                             <p className="text-muted-foreground">
-                                                Rubaga Road, Kampala, Uganda
+                                                PO Box 214461<br />
+                                                Kulambiro Ring Road, Plot 1207<br />
+                                                Kla-Ug
                                             </p>
                                         </div>
                                     </div>
