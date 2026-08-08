@@ -45,8 +45,7 @@ export function Navigation() {
               <img
                 src="/thrive-v2/thrive-horizontal-lockup_3.png"
                 alt="Thrive Health Link (THL)"
-
-                className="w-auto h-[32px] rounded-full ring-4 ring-white/50 shadow-xl relative transform group-hover:scale-110 transition-transform duration-300"
+                className="w-auto h-[48px] rounded-full ring-4 ring-white/50 shadow-xl relative transform group-hover:scale-110 transition-transform duration-300"
               />
             </div>
           </Link>

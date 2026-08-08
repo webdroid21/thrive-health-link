@@ -82,7 +82,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li>PO Box 214461</li>
                             <li>Kulambiro Ring Road, Plot 1207</li>
-                            <li>Kla-Ug</li>
+                            <li>Kampala-Uganda</li>
                             <li>
                                 <a
                                     href="tel:+256784267680"

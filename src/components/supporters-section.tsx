@@ -15,13 +15,14 @@ const supporters = [
     {
         name: "FASI Uganda",
         url: "https://www.fasiuganda.org/",
-        description: "Foundation for Advanced Studies & Innovation",
+        description: "Supporting Livelihoods through Innovation and Development",
         image: "/partners/fasi.jpeg",
     },
     {
         name: "Spoon Foundation",
         url: "https://www.spoonfoundation.org/",
-        description: "Nourishing vulnerable children through evidence-based nutrition programs",
+        description: "Nourishing children with disabilities through evidence-based nutrition programs",
+        image: "/partners/spoon.jpeg",
     },
 ];
 

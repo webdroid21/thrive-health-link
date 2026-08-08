@@ -147,7 +147,7 @@ export function ContactSection() {
                                             <p className="text-muted-foreground">
                                                 PO Box 214461<br />
                                                 Kulambiro Ring Road, Plot 1207<br />
-                                                Kla-Ug
+                                                Kampala-Uganda
                                             </p>
                                         </div>
                                     </div>
